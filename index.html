@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link Google Font poopins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/asset/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>SMP GITA KIRTTI 2</title>
+  </head>
+  <body>
+    <!-- Menu Section -->
+    <header>
+      <nav class="container-nav">
+        <a href="#home" class="logo-badge"
+          ><img src="./src/asset/images/smp-gita-tirtti-2.png" alt="logo-gita"
+        /></a>
+
+        <ul class="nav-menu">
+          <li><a href="#home">Beranda</a></li>
+          <li class="nav-dropdown">
+            <a href="#profile">Profil</a>
+            <ul class="nav-submenu">
+              <li><a href="#sejarah">Sejarah Sekolah</a></li>
+              <li><a href="visi-misi.html">Visi dan Misi</a></li>
+            </ul>
+          </li>
+          <li><a href="#guru">Guru</a></li>
+          <li><a href="#galery">Galeri</a></li>
+          <li><a href="#fasilitas">Fasilitas</a></li>
+          <li><a href="#eskul">Ekstrkulikuler</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <!-- BARU: tombol menu mobile; menu desktop asli di atas tetap dipertahankan. -->
+        <button
+          class="nav-mobile-toggle"
+          type="button"
+          aria-label="Buka menu"
+          aria-controls="nav-mobile-panel"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <!-- BARU: menu mobile terpisah agar struktur dan kode menu asli tidak berubah. -->
+      <div
+        class="nav-mobile-panel"
+        id="nav-mobile-panel"
+        aria-hidden="true"
+        inert
+      >
+        <button
+          class="nav-mobile-close"
+          type="button"
+          aria-label="Tutup menu"
+        >&times;</button>
+        <ul class="nav-mobile-menu">
+          <li><a href="#home">Beranda</a></li>
+          <li class="nav-mobile-dropdown">
+            <a href="#profile">Profil</a>
+            <ul class="nav-mobile-submenu">
+              <li><a href="#sejarah">Sejarah Sekolah</a></li>
+              <li><a href="visi-misi.html">Visi dan Misi</a></li>
+            </ul>
+          </li>
+          <li><a href="#guru">Guru</a></li>
+          <li><a href="#galery">Galeri</a></li>
+          <li><a href="#fasilitas">Fasilitas</a></li>
+          <li><a href="#eskul">Ekstrkulikuler</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <button
+        class="nav-mobile-overlay"
+        type="button"
+        aria-label="Tutup menu"
+        tabindex="-1"
+        aria-hidden="true"
+      ></button>
+    </header>
+
+    <main>
+      <!-- Home section -->
+      <section class="hero-sect" id="home">
+        <div class="hero-content">
+          <h1>SMP GITA KIRTTI 2</h1>
+          <p>
+            Berdiri sejak 15 Juni 1971 di bawah naungan Yayasan Pendidikan Gita
+            Kirtti (GIKI), SMP Gita Kirtti 2 hadir di Tanjung Priok, Jakarta
+            Utara, untuk melayani pendidikan menengah pertama dan membentuk
+            generasi yang cerdas, berkarakter, dan siap menatap masa depan.
+          </p>
+        </div>
+        <a href="#sejarah" class="scroll-down" aria-label="Gulir ke bawah">
+          <span class="mouse"><span class="wheel"></span></span>
+        </a>
+      </section>
+
+      <!-- Sejarah section -->
+      <section class="sjr-sect" id="sejarah">
+        <div class="sjr">
+          <div class="wrap-sjr">
+            <img
+              src="./src/asset/images/depan-sekolah.jpeg"
+              alt="Tampak depan SMP Gita Kirtti 2 Jakarta"
+            />
+            <div class="sjr-text">
+              <h2>Sejarah Sekolah</h2>
+              <p>
+                Yayasan Pendidikan Gita Kirtti (GIKI) berdiri pada 28 Desember
+                1958 dan sejak itu ikut mencerdaskan kehidupan bangsa melalui
+                sekolah-sekolah yang diselenggarakannya di Surabaya, DKI
+                Jakarta, dan Jawa Barat. Pada 2017, yayasan genap berusia 59
+                tahun, dan kini telah lebih dari enam dekade mengabdi di dunia
+                pendidikan.
+              </p>
+              <p>
+                Di bawah naungan yayasan ini, SMP Gita Kirtti 2 Jakarta berdiri
+                pada 15 Juni 1971 di Tanjung Priok, Jakarta Utara. Sekolah ini
+                terus berkembang sebagai tempat peserta didik membangun
+                pengetahuan, mengembangkan bakat, dan membentuk karakter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Guru -->
+      <section class="gr-sect" id="guru">
+        <div class="container-gr">
+          <h2>Daftar Guru dan Staf</h2>
+          <p>Dibimbing oleh para pendidik yang berpengalaman</p>
+          <div class="carousel-gr">
+            <button
+              type="button"
+              aria-label="sebelum"
+              class="carousel-btn prev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"
+                />
+              </svg>
+            </button>
+
+            <div class="daftar-gr">
+              <!-- Card Guru -->
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Sarifudin, S.Pd., Gr."
+                />
+                <h3>Sarifudin, S.Pd., Gr.</h3>
+                <span>Kepala Sekolah</span>
+                <p>BP</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Frima Zuan Suchandra, M.Pd., Gr."
+                />
+                <h3>Frima Zuan Suchandra, M.Pd., Gr.</h3>
+                <span>Wakasek Akademik</span>
+                <p>Pend. Pancasila</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Pujihati, S.Pd., Gr."
+                />
+                <h3>Pujihati, S.Pd., Gr.</h3>
+                <span>Wakasek Kesiswaan</span>
+                <p>Bahasa Inggris</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Wahyono, S.Pdi."
+                />
+                <h3>Wahyono, S.Pdi.</h3>
+                <span>Guru</span>
+                <p>IPA</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Nurhayati, S.Pd, M.Ag., Gr."
+                />
+                <h3>Nurhayati, S.Pd, M.Ag., Gr.</h3>
+                <span>Guru</span>
+                <p>PABP/SBK</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Hartini, M.M., Gr."
+                />
+                <h3>Hartini, M.M., Gr.</h3>
+                <span>Pembina OSIS</span>
+                <p>IPA, IPS</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Ulfa Uzzi Fani, S.Pd., Gr."
+                />
+                <h3>Ulfa Uzzi Fani, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>IPS</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Ribka Elisabeth, S.Th."
+                />
+                <h3>Ribka Elisabeth, S.Th.</h3>
+                <span>Guru</span>
+                <p>Pend. Agama Kristen</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Ima Fatimah, S.Pd., Gr."
+                />
+                <h3>Ima Fatimah, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>PAIBP/SBK</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Prikoso Handoko, S.T., M.Pd."
+                />
+                <h3>Prikoso Handoko, S.T., M.Pd.</h3>
+                <span>Guru</span>
+                <p>Pend. Pancasila</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Dyan Febriyanti, S.Pd., Gr."
+                />
+                <h3>Dyan Febriyanti, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>IPA</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Sri Irianti Nigsih, S.Pd."
+                />
+                <h3>Sri Irianti Nigsih, S.Pd.</h3>
+                <span>Guru</span>
+                <p>Bahasa Indonesia</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Melani Sunandar, S.Pd., Gr."
+                />
+                <h3>Melani Sunandar, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>Matematika</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Sofia Dwi Mardiyaningsih, S.Pd., Gr."
+                />
+                <h3>Sofia Dwi Mardiyaningsih, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>Informatika</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Petrus Muhartiyo"
+                />
+                <h3>Petrus Muhartiyo</h3>
+                <span>Guru</span>
+                <p>Olahraga</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Nur Amaliatunnisa, S.Pd., Gr."
+                />
+                <h3>Nur Amaliatunnisa, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>Matematika</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Hajidah, S.Pd., Gr."
+                />
+                <h3>Hajidah, S.Pd., Gr.</h3>
+                <span>Guru</span>
+                <p>Bahasa Indonesia</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Drs. Suparjo Mustopa"
+                />
+                <h3>Drs. Suparjo Mustopa</h3>
+                <span>Guru</span>
+                <p>Olahraga</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Cindar Irianti, S.Pd."
+                />
+                <h3>Cindar Irianti, S.Pd.</h3>
+                <span>Guru</span>
+                <p>SBK/Prakarya</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Supartini, S.Pd"
+                />
+                <h3>Supartini, S.Pd</h3>
+                <span>Guru</span>
+                <p>Bahasa Inggris</p>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Sri Robbiah Pahlawani, S.Pd"
+                />
+                <h3>Sri Robbiah Pahlawani, S.Pd</h3>
+                <span>Guru</span>
+                <p>Matematika</p>
+              </div>
+
+              <!-- card staff -->
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Purwanti"
+                />
+                <h3>Purwanti</h3>
+                <span>Ka. Tata Usaha</span>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Diah Saptarini"
+                />
+                <h3>Diah Saptarini</h3>
+                <span>Staf Tata Usaha</span>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-2.png"
+                  alt="Nur Aisah"
+                />
+                <h3>Nur Aisah</h3>
+                <span>Staf Tata Usaha</span>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Zaitulloh"
+                />
+                <h3>Zaitulloh</h3>
+                <span>Pramubakti</span>
+              </div>
+              <div class="card-gr">
+                <img
+                  src="./src/asset/images/placeholder-profile-1.png"
+                  alt="Krisnawato"
+                />
+                <h3>Krisnawato</h3>
+                <span>Pramubakti</span>
+              </div>
+            </div>
+            <button
+              type="button"
+              aria-label="selanjutnya"
+              class="carousel-btn next"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+      </section>
+
+      <!-- Galeri Section -->
+      <!-- Galeri Section -->
+      <section class="galeri-sect" id="galery">
+        <div class="container-galeri">
+          <h2>Galeri Kegiatan</h2>
+          <p>Momen dan kegiatan siswa/siswi</p>
+
+          <div class="galeri-stage" id="galeriStage">
+            <div class="galeri-content" id="galeriContent">
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/basket.jpeg"
+                  alt="Kegiatan basket"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/futsal.jpeg"
+                  alt="Kegiatan futsal"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/camping.png"
+                  alt="Kegiatan camping"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/breafing-pramuka.png"
+                  alt="Pengarahan kegiatan pramuka"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/breafing-pramuka-2.png"
+                  alt="Pengarahan kegiatan pramuka"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/upacara-pramuka.png"
+                  alt="Upacara pramuka"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/upacara-pramuka-3.png"
+                  alt="Upacara pramuka"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/pramuka-1.png"
+                  alt="Kegiatan pramuka"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/pramuka-2.png"
+                  alt="Kegiatan pramuka"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/api-unggun-2.png"
+                  alt="Api unggun"
+                  loading="lazy"
+                />
+              </button>
+              <button type="button" class="galeri-item">
+                <img
+                  src="./src/asset/images/kegiatan/api-unggun-1.png"
+                  alt="Api unggun"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+          </div>
+
+          <p class="galeri-petunjuk" id="galeriPetunjuk">
+            Klik tumpukan foto untuk membukanya
+          </p>
+          <button type="button" class="galeri-tutup" id="galeriTutup" hidden>
+            Rapikan kembali
+          </button>
+        </div>
+
+        <!-- Lightbox (tetap sama) -->
+        <dialog class="galeri-lightbox" id="lightbox">
+          <button type="button" class="lightbox-close" aria-label="Tutup">
+            &times;
+          </button>
+          <img src="" alt="" />
+        </dialog>
+      </section>
+
+      <!-- Section Fasilitas -->
+      <section class="fasilitas-sect" id="fasilitas">
+        <div class="container-fasilitas">
+          <h2>Fasilitas Sekolah</h2>
+          <p class="fasilitas-intro">Fasilitas yang tersedia</p>
+
+          <div class="fasilitas-timeline">
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/ruang-kelas.jpeg"
+                alt="Ruang kelas SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Ruang Kelas</h3>
+                <p>
+                  Ruang tempat peserta didik mengikuti kegiatan belajar mengajar
+                  setiap hari.
+                </p>
+              </div>
+            </article>
+
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/ruang-guru.jpeg"
+                alt="Ruang guru SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Ruang Guru</h3>
+                <p>
+                  Tempat para guru menyiapkan pembelajaran dan berdiskusi dengan
+                  rekan kerja.
+                </p>
+              </div>
+            </article>
+
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/perpustakaan.jpeg"
+                alt="Perpustakaan SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Perpustakaan</h3>
+                <p>
+                  Tempat peserta didik membaca dan mencari sumber belajar
+                  tambahan.
+                </p>
+              </div>
+            </article>
+
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/lapangan.jpeg"
+                alt="Lapangan SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Lapangan</h3>
+                <p>
+                  Area untuk upacara, olahraga, dan berbagai kegiatan di luar
+                  kelas.
+                </p>
+              </div>
+            </article>
+
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/kantin.jpeg"
+                alt="Kantin SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Kantin</h3>
+                <p>
+                  Tempat peserta didik beristirahat dan menikmati makanan serta
+                  minuman.
+                </p>
+              </div>
+            </article>
+
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/parkir.jpeg"
+                alt="Area parkir SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Area Parkir</h3>
+                <p>
+                  Area untuk menempatkan kendaraan guru, staf, dan pengunjung
+                  sekolah.
+                </p>
+              </div>
+            </article>
+
+            <article class="fasilitas-card">
+              <img
+                src="./src/asset/images/fasilitas/toilet.jpeg"
+                alt="Toilet SMP Gita Kirtti 2"
+                loading="lazy"
+              />
+              <div class="fasilitas-info">
+                <h3>Toilet</h3>
+                <p>
+                  Sarana sanitasi yang digunakan oleh seluruh warga sekolah.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Ekstrakurikuler -->
+      <section class="eskul-sect" id="eskul">
+        <div class="container-eskul">
+          <h2>Ekstrakurikuler</h2>
+          <p class="eskul-intro">Ekstrakurikuler yang menyenangkan</p>
+
+          <div class="eskul-grid">
+            <figure class="eskul-item" tabindex="0">
+              <img
+                src="./src/asset/images/eskul/eskul-futsal.jpeg"
+                alt="Kegiatan ekstrakurikuler futsal"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>Futsal</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="eskul-item" tabindex="0">
+              <img
+                src="./src/asset/images/eskul/upacara-pramuka-2.png"
+                alt="Kegiatan ekstrakurikuler pramuka"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>Pramuka</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="eskul-item" tabindex="0">
+              <img
+                src="./src/asset/images/kegiatan/basket.jpeg"
+                alt="Kegiatan ekstrakurikuler basket"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>Basket</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Persyaratan Masuk -->
+      <section class="syarat-sect" id="syarat">
+        <div class="syarat-container">
+          <h2>Persyaratan Masuk</h2>
+          <p class="syarat-intro">
+            [ISI: kalimat pengantar singkat, misalnya tahun ajaran dan info umum
+            pendaftaran]
+          </p>
+
+          <div class="syarat-grid">
+            <!-- DUMMY: ganti dengan syarat resmi dari sekolah -->
+            <article class="syarat-card">
+              <h3>Dokumen yang Disiapkan</h3>
+              <ul class="syarat-list">
+                <li>Fotokopi akta kelahiran</li>
+                <li>Fotokopi kartu keluarga</li>
+                <li>Fotokopi ijazah atau surat keterangan lulus SD/MI</li>
+                <li>Fotokopi rapor terakhir</li>
+                <li>Pas foto terbaru</li>
+                <li>Fotokopi KTP orang tua atau wali</li>
+              </ul>
+            </article>
+
+            <!-- DUMMY: ganti dengan alur resmi dari sekolah -->
+            <article class="syarat-card">
+              <h3>Alur Pendaftaran</h3>
+              <ol class="syarat-steps">
+                <li>Mengambil dan mengisi formulir pendaftaran</li>
+                <li>Menyerahkan formulir beserta dokumen persyaratan</li>
+                <li>Verifikasi berkas oleh panitia</li>
+                <li>Pengumuman hasil seleksi</li>
+                <li>Daftar ulang bagi peserta yang diterima</li>
+              </ol>
+            </article>
+          </div>
+
+          <p class="syarat-cta">
+            Ada pertanyaan tentang pendaftaran?
+            <a href="#contact">Hubungi sekolah</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Section Kontak -->
+      <section class="contact-sect" id="contact">
+        <div class="container-contact">
+          <!-- Kolom kiri: info dan peta -->
+          <div class="contact-info">
+            <h2>Hubungi Kami</h2>
+
+            <dl class="contact-list">
+              <div>
+                <dt>Alamat</dt>
+                <dd>
+                  Jl. Sunter Jaya IV/2, Kel. Sunter Jaya, Kec. Tanjung Priok,
+                  Jakarta Utara
+                </dd>
+              </div>
+              <div>
+                <dt>Telepon</dt>
+                <dd>[ISI: nomor telepon sekolah]</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>[ISI: email resmi sekolah]</dd>
+              </div>
+              <div>
+                <dt>Jam Operasional</dt>
+                <dd>[ISI: hari dan jam layanan]</dd>
+              </div>
+            </dl>
+
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8140400720013!2d106.8673506!3d-6.1556552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f580e4314a5b%3A0x36bf7496cea4dec7!2sSMP%20Gita%20Tirtti%202!5e0!3m2!1sid!2sid!4v1792563578746!5m2!1sid!2sid"
+                title="Lokasi SMP Gita Kirtti 2 Jakarta"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/search/?api=1&query=SMP+Gita+Kirtti+2+Jakarta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buka di Google Maps
+            </a>
+          </div>
+
+          <!-- Kolom kanan: form -->
+          <form class="contact-form">
+            <label for="name">Nama</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nama lengkap Anda"
+              autocomplete="name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nama@email.com"
+              autocomplete="email"
+              required
+            />
+
+            <label for="message">Pesan</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tulis pesan Anda di sini..."
+              required
+            ></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <!-- Kolom 1: merek -->
+        <div class="footer-brand">
+          <a class="footer-logo" href="#home" aria-label="Kembali ke beranda">
+            <img
+              src="./src/asset/images/smp-gita-tirtti-2.png"
+              alt="Logo SMP Gita Kirtti 2"
+            />
+          </a>
+          <div>
+            <h2>SMP Gita Kirtti 2</h2>
+            <p>Belajar, berkarya, dan berkembang setiap hari.</p>
+          </div>
+        </div>
+
+        <!-- Kolom 2: tautan cepat -->
+        <nav class="footer-links" aria-label="Tautan footer">
+          <h3>Tautan Cepat</h3>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#sejarah">Sejarah Sekolah</a></li>
+            <li><a href="#guru">Guru dan Staf</a></li>
+            <li><a href="#galery">Galeri</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#eskul">Ekstrakurikuler</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+
+        <!-- Kolom 3: kontak -->
+        <div class="footer-contact">
+          <h3>Kontak</h3>
+          <address>
+            <p>
+              Jl. Sunter Jaya IV/2, Kel. Sunter Jaya, Kec. Tanjung Priok,
+              Jakarta Utara
+            </p>
+            <p>[ISI: nomor telepon sekolah]</p>
+            <p>[ISI: email resmi sekolah]</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SMP Gita Kirtti 2. Hak cipta dilindungi.</p>
+        <a href="#home">Kembali ke atas &uarr;</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BARU: logika terpisah untuk hamburger; script.js asli tidak diubah. -->
+    <script src="./src/js/navbar-mobile.js"></script>
+    <!-- BARU: animasi masuk ringan untuk bagian halaman. -->
+    <script src="./src/js/scroll-reveal.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
