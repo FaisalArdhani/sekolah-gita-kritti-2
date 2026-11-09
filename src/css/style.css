@@ -17,6 +17,7 @@
 }
 
 html {
+    scroll-padding-top: 30px;
     scroll-behavior: smooth;
     scrollbar-width: none;
     /* Firefox dan Chrome versi baru */
@@ -1052,6 +1053,40 @@ h2 {
     line-height: 1.6;
 }
 
+.syarat-container h2,
+.footer-brand h2 {
+    color: var(--putih);
+}
+
+/* Kolom jebakan bot: disembunyikan dari pengguna */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Pesan status form */
+.form-status {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.form-status.sukses {
+    color: #166534;
+}
+
+.form-status.gagal {
+    color: #b91c1c;
+}
+
+.contact-form button:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
 /* Peta */
 .contact-map {
     margin-top: 24px;
@@ -1340,7 +1375,7 @@ h2 {
 }
 
 @media (max-width: 992px) {
-    .container-nav > .nav-menu {
+    .container-nav>.nav-menu {
         display: none;
     }
 

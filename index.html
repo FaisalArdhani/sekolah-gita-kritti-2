@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,7 +46,7 @@
           <li><a href="#guru">Guru</a></li>
           <li><a href="#galery">Galeri</a></li>
           <li><a href="#fasilitas">Fasilitas</a></li>
-          <li><a href="#eskul">Ekstrkulikuler</a></li>
+          <li><a href="#eskul">Ekstrakurikuler</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
         <!-- BARU: tombol menu mobile; menu desktop asli di atas tetap dipertahankan. -->
@@ -69,11 +69,9 @@
         aria-hidden="true"
         inert
       >
-        <button
-          class="nav-mobile-close"
-          type="button"
-          aria-label="Tutup menu"
-        >&times;</button>
+        <button class="nav-mobile-close" type="button" aria-label="Tutup menu">
+          &times;
+        </button>
         <ul class="nav-mobile-menu">
           <li><a href="#home">Beranda</a></li>
           <li class="nav-mobile-dropdown">
@@ -86,7 +84,7 @@
           <li><a href="#guru">Guru</a></li>
           <li><a href="#galery">Galeri</a></li>
           <li><a href="#fasilitas">Fasilitas</a></li>
-          <li><a href="#eskul">Ekstrkulikuler</a></li>
+          <li><a href="#eskul">Ekstrakurikuler</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
       </div>
@@ -201,7 +199,7 @@
               </div>
               <div class="card-gr">
                 <img
-                  src="./src/asset/images/placeholder-profile-1.png"
+                  src="./src/asset/images/guru/Wahyono-Arif.jpg"
                   alt="Wahyono, S.Pdi."
                 />
                 <h3>Wahyono, S.Pdi.</h3>
@@ -219,7 +217,7 @@
               </div>
               <div class="card-gr">
                 <img
-                  src="./src/asset/images/placeholder-profile-2.png"
+                  src="./src/asset/images/guru/Hartini-Dwie.jpg"
                   alt="Hartini, M.M., Gr."
                 />
                 <h3>Hartini, M.M., Gr.</h3>
@@ -264,7 +262,7 @@
               </div>
               <div class="card-gr">
                 <img
-                  src="./src/asset/images/placeholder-profile-2.png"
+                  src="./src/asset/images/guru/Dyan-Febriyanti.jpg"
                   alt="Dyan Febriyanti, S.Pd., Gr."
                 />
                 <h3>Dyan Febriyanti, S.Pd., Gr.</h3>
@@ -291,7 +289,7 @@
               </div>
               <div class="card-gr">
                 <img
-                  src="./src/asset/images/placeholder-profile-2.png"
+                  src="./src/asset/images/guru/sofia-dwi-mardiyaningsih.jpg"
                   alt="Sofia Dwi Mardiyaningsih, S.Pd., Gr."
                 />
                 <h3>Sofia Dwi Mardiyaningsih, S.Pd., Gr.</h3>
@@ -327,7 +325,7 @@
               </div>
               <div class="card-gr">
                 <img
-                  src="./src/asset/images/placeholder-profile-1.png"
+                  src="./src/asset/images/guru/suparjo-mustopa.jpg"
                   alt="Drs. Suparjo Mustopa"
                 />
                 <h3>Drs. Suparjo Mustopa</h3>
@@ -354,7 +352,7 @@
               </div>
               <div class="card-gr">
                 <img
-                  src="./src/asset/images/placeholder-profile-2.png"
+                  src="./src/asset/images/guru/Sri-Robbiah-Pahlawani.png"
                   alt="Sri Robbiah Pahlawani, S.Pd"
                 />
                 <h3>Sri Robbiah Pahlawani, S.Pd</h3>
@@ -427,7 +425,6 @@
         </div>
       </section>
 
-      <!-- Galeri Section -->
       <!-- Galeri Section -->
       <section class="galeri-sect" id="galery">
         <div class="container-galeri">
@@ -812,7 +809,18 @@
               required
             ></textarea>
 
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
             <button type="submit">Kirim Pesan</button>
+            <p class="form-status" role="status"></p>
           </form>
         </div>
       </section>
@@ -872,10 +880,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- BARU: logika terpisah untuk hamburger; script.js asli tidak diubah. -->
     <script src="./src/js/navbar-mobile.js"></script>
     <!-- BARU: animasi masuk ringan untuk bagian halaman. -->
     <script src="./src/js/scroll-reveal.js"></script>
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/contact.js"></script>
   </body>
 </html>
